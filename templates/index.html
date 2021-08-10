@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+    </style>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel = "stylesheet" href = "../style.css"/>
+    <link rel = "stylesheet" id = "stylee" href = "../stylesheet.css">
+
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>JavaScript Website</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    
+  </head>
+  <body>
+    <div class="sidebar">
+        <a class="active" href="#home">Profile</a>
+<br>
+<br>
+<br>
+        <a href="#news">Home</a>
+        <a href="#contact">News</a>
+        <a href="#about">Recipe</a>
+        <a href = "#test"> Code</a>
+      </div>
+      <div class = "header">
+          <div class="time">   <div id="pdate"></div>
+            <div id="ptime"></div>        
+            <p id = "pussy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos rem officiis sapiente provident, magnam minus ut quasi beatae omnis.</p>
+  </div>
+
+
+    </div>
+
+
+<div class="logocontainer">
+  <div class = "onemore"> 
+  <button class = "five">   </button>
+
+  <button class = "ten">    </button>
+  <button class = "fifteen">     </button>
+  <button class = "twenty-five">    </button>
+  <button class = "fifty2">     </button>
+  <button class = "fifty">     </button>
+</div>
+
+</div>
+<div class="outdiv">
+  <!-- Start of to do list--> 
+<section class="todo">
+  <form class = "grocery-form"> 
+    <p class = "alert" ></p>
+   
+    <h3 style = "text-align:center;"> To Do List</h3>
+    <div class="form-control">       
+      <input type = "text" id = "list" placeholder = "e.g. walk dog">
+      <button type = "submit" class = "submit-btn">
+      Submit
+    </div>
+    
+
+  </form>
+  <div class="grocery-container">
+    <div class="grocery-list">
+
+       
+    </div>
+    <!-- button -->
+    <button type = "button" class = "clear-btn"> Clear Items</button>
+</div>
+
+      
+    
+      </section>
+<!-- End of to do list-->
+      
+</div>
+<div id = "calcModal" class = "modal">
+  <div class="calc-content">
+    <span class="close">&times;</span>
+    <div class="morediv"> 
+    <div class="maindiv">
+      calc <span class = "but"> <span class = "theme"> THEME</span><link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
+      
+        <div class="switch-toggle switch-3 switch-candy">
+      
+          <input id="on" name="state-d" type="radio" checked="" />
+          <label for="on" onclick="">1</label>
+        
+          <input id="na" name="state-d" type="radio" checked="checked" />
+          <label for="na" class="disabled" onclick="">2</label>
+        
+          <input id="off" name="state-d" type="radio" />
+          <label for="off" onclick="">3</label>
+        
+        </div>
+         </span>
+      <div class="numbers">
+        <p id = "texttochange"> 0</p>
+      </div>
+      <div class="grid-container">
+        <button type = "button" class = "juan"> 1</button>
+        <button type = "button" class = "dos"> 2</button>
+        <button type = "button" class = "tres"> 3</button>
+        <button type="button" class="del" value="del">DEL</button>
+      
+        <button type = "button" class = "cuatro"> 4</button>
+        <button type = "button" class = "cinco"> 5</button>
+        <button type = "button" class = "seis"> 6</button>
+        <button type="button" class="operator4" value="+">+</button>
+      
+        <button type = "button" class = "siete"> 7</button>
+        <button type = "button" class = "ocho"> 8</button>
+        <button type = "button" class = "nueve"> 9</button>
+        <button type="button" class="operator1" value="-">-</button>
+        <button type="button" class="decimal" value=".">.</button>
+        <button type = "button" class = "zero"> 0</button>
+        <button type="button" class="operator2" value="/">&divide;</button>
+        <button type="button" class="operator" value="*">&times;</button>
+        <button type="button" class="reset" value="reset">RESET</button>
+      
+        <button type="button" class="equal-sign" value="=">=</button>
+      
+      
+      
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="../app.js" defer></script>
+<script src = "../newapp.js"></script>
+<script src = "../testing.js"></script>
+<script src = "../todo.js"></script>
+
+  </body>
+</html>
