@@ -338,6 +338,18 @@ body{
     text-decoration: none;
     cursor: pointer;
   }
+  .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -445,4 +457,78 @@ body{
 }
 .clear-btn:hover {
   color: darkred;
+}
+
+.stackModal{
+  height: 550px;
+  width: 60%;
+  background-color: #fffdd0;
+  margin:auto;
+  padding: 40px;
+}
+#stackimage{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+#stackquestion{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 30px;
+  width: 75%;
+  font-size: 12pt;
+  padding: 10px;
+  font-family: Commissioner;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+#main-title-container {
+  position: relative;
+  left: 190px;
+}
+
+#answers-container {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+
+#Load-More {
+  position: fixed;
+  bottom: 5px;
+  margin-top: 10px;
+  left: 12%;
+
+}
+.load-more-button {
+  background: rgba(210, 206, 206, 0.9);
+  border: 5px solid #D2CECE;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 93px;
+  height: 38px;
+}
+
+#search-result {
+  position: absolute;
+  top: 40%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+  font-family: Commissioner;
+    
+
+}
+a.johncena:link{
+  color: royalblue;
+}
+a.johncena:hover{
+  color:rgb(72, 55, 185);
 }
