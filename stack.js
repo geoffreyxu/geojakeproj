@@ -55,6 +55,37 @@ formstack.addEventListener("submit", function(e){
 
 
 }, false)
+function searchSO(stackamount = 10){
+    let stackvalue = stack.value
+    let testingvar = encodeURIComponent(stackvalue)
+    let stackurl = `https://api.stackexchange.com/2.2/search/advanced?pagesize=${stackamount}&order=desc&sort=activity&accepted=True&q=${testingvar}&site=stackoverflow`
+  
+    fetch(stackurl).then(res => res.json()).then(data =>{
+        if (data.items.length === 0) {
+            document.getElementById("answers-container").innerHTML = "No Results found, please use more concise keywords!";
+            return;
+          }
+          if(stackamount >= 100){
+              document.getElementById("Load-More").innerHTML = "<h5> Sorry, no more results <h5>"
+          }
+          else {
+            document.getElementById(
+              "Load-More"
+            ).innerHTML = `<button class="load-more-button" type="button" onClick="searchSO(${
+              stackamount + 10
+            }, ${data.items.length})">Load More</button>`;
+          }
+          const d = data.items;
+          const x = d.map(
+            (a) => `<a href="${a.link}" target=”_blank" class = "johncena">${a.title}</a>`
+          );
+          document.getElementById("search-result").innerHTML = `Searching Results for ${stackvalue}`
+          document.getElementById("answers-container").innerHTML = x.join("<br><br>")
+          
+    
+    })
+    
+  }
 // let stackamount = 10
 // let testingvar = 'List Comprehension'
 // let testingval = encodeURIComponent(testingvar)
