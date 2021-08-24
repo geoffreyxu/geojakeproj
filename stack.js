@@ -1,6 +1,7 @@
 
 const stack = document.getElementById("stackquestion")
 const formstack = document.getElementById("stackform")
+const stackbutton = document.querySelector(".load-more-button")
 //THIS IS USEFUL WHEN SETTING UP SECOND BUTTON BECAUSE I ALREADY DID IT BUT THEN PUT STACK SOMEWHERE ELSE
 // const modal2 = document.getElementById("stackflowModal");
 // const nuevobut = document.querySelector('.ten')
@@ -22,7 +23,9 @@ formstack.addEventListener("submit", function(e){
     let stackvalue = stack.value
     let stackamount = 10
     let testingvar = encodeURIComponent(stackvalue)
+    
     let stackurl = `https://api.stackexchange.com/2.2/search/advanced?pagesize=${stackamount}&order=desc&sort=activity&accepted=True&q=${testingvar}&site=stackoverflow`
+    
     fetch(stackurl).then(res => res.json()).then(data =>{
         if (data.items.length === 0) {
             document.getElementById("answers-container").innerHTML = "No Results found, please use more concise keywords!";

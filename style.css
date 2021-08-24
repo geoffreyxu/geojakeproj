@@ -453,8 +453,7 @@ body{
   cursor: pointer;
   transition: all 0.3s linear;
   margin-top: 1.25rem;
-  z-index: 2;
-}
+ }
 .clear-btn:hover {
   color: darkred;
 }
@@ -498,18 +497,21 @@ body{
 
 #Load-More {
   position: fixed;
-  bottom: 5px;
+  bottom: 15px;
   margin-top: 10px;
-  left: 12%;
+  left: 75%;
+  
 
 }
 .load-more-button {
-  background: rgba(210, 206, 206, 0.9);
+  background: rgba(201, 197, 197, 0.9);
   border: 5px solid #D2CECE;
   box-sizing: border-box;
   border-radius: 15px;
   width: 93px;
   height: 38px;
+  font-size: 10pt;
+  font-family: Commissioner;
 }
 
 #search-result {
