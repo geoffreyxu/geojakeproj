@@ -1,18 +1,19 @@
 
 const stack = document.getElementById("stackquestion")
 const formstack = document.getElementById("stackform")
-const modal2 = document.getElementById("stackflowModal");
-const nuevobut = document.querySelector('.ten')
-const close2  = document.querySelector('.close2')
-nuevobut.addEventListener('click', function(){
-    modal2.style.display = "block";
+//THIS IS USEFUL WHEN SETTING UP SECOND BUTTON BECAUSE I ALREADY DID IT BUT THEN PUT STACK SOMEWHERE ELSE
+// const modal2 = document.getElementById("stackflowModal");
+// const nuevobut = document.querySelector('.ten')
+// const close2  = document.querySelector('.close2')
+// nuevobut.addEventListener('click', function(){
+//     modal2.style.display = "block";
     
-})
-// When the user clicks on <span> (x), close the modal
-close2.onclick = function() {
-    modal2.style.display = "none";
+// })
+// // When the user clicks on <span> (x), close the modal
+// close2.onclick = function() {
+//     modal2.style.display = "none";
     
-  }
+//   }
   
   // When the user clicks anywhere outside of the modal, close it
 

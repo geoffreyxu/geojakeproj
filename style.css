@@ -460,7 +460,7 @@ body{
 }
 
 .stackModal{
-  height: 550px;
+  height: 100%;
   width: 60%;
   background-color: #fffdd0;
   margin:auto;
@@ -532,3 +532,4 @@ a.johncena:link{
 a.johncena:hover{
   color:rgb(72, 55, 185);
 }
+
