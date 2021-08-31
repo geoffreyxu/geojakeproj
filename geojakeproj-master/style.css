@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200&display=swap');
+
+body{
+  background-color: hsl(176, 80%, 30%);
+  padding: 0px;
+  margin: 0px;
+}
+
+.header{
+  background-color: hsl(176, 50%, 47%);
+  height: 200px;
+  width: 82%;
+  border-radius: 20px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-family: Commissioner;
+  font-size: 20pt;
+  color: hsla(0, 0%, 80%, 0.822);
+  
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: hsl(176, 50%, 47%);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: Commissioner;
+}
+/* The news navigation menu */
+.newstopics {
+  margin-left: 200px;
+  margin-top: 200px;
+  padding: 0;
+  width: 100%;
+  background-color: hsl(176, 50%, 47%);
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  font-family: Commissioner;
+}
+
+/* News navigation links */
+.newstopics a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* styling for news navigation links */
+.newstopics li {
+display: inline-block;
+}
+
+/* Active/current link */
+.newstopics a.active {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+/* Links on mouse-over */
+.newstopics a:hover:not(.active) {
+  background-color: hsl(176, 80%, 30%);
+  color: white;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  text-align: right;
+  padding-right: 30px;
+
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: hsl(176, 80%, 30%);
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 600px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.time{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+p{
+    font-size: 12pt;
+}
+.item-a {
+  grid-column-start: 1;
+  grid-column-end: two;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+.item-1{
+  background-color: pink;
+  height: 50px;
+
+}
+
+button{
+  width: 20%;
+  height: 20%;
+  background-color:hsl(183, 100%, 15%);
+  border-style: none;
+  font-family: Space Mono;
+  font-size: 17px;
+  color: white;
+  border-radius: 5px;
+  float:center;
+  cursor: pointer;
+
+}
+.ten{
+      background-size: 10vh 10vh;
+      background-position: center;
+      display: inline-block;
+      background-color: hsl(176, 50%, 47%);
+      width: 15vh;
+      height: 15vh;
+      border-radius: 25%;
+      margin-right: 30px;
+}
+.fifteen{
+  background-size: 10vh 10vh;
+  background-position: center;
+  display: inline-block;
+  background-color: hsl(176, 50%, 47%);
+  width: 15vh;
+  height: 15vh;
+  border-radius: 25%;
+  margin-bottom: 30px;
+
+}
+.fifty2{
+background-size: 10vh 10vh;
+background-position: center;
+display: inline-block;
+background-color: hsl(176, 50%, 47%);
+width: 15vh;
+height: 15vh;
+border-radius: 25%;
+margin-right: 30px;
+
+
+}
+#whiteboardbutton {
+  background-size: 10vh 10vh;
+  background-position: center;
+  display: inline-block;
+  background-color: hsl(176, 50%, 47%);
+  width: 15vh;
+  height: 15vh;
+  border-radius: 25%;
+
+}
+.twenty-five{
+
+  background-size: 10vh 10vh;
+  background-position: center;
+  display: inline-block;
+  background-color: hsl(176, 50%, 47%);;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 25%;
+  margin-right: 30px;
+
+}
+.onemore{
+background-color: hsl(176, 80%, 30%);
+width: 25.5rem;
+height: 15rem;
+margin: auto;
+inset: 0rem;
+padding: 50px;
+
+
+}
+.five{			
+background-size: 10vh 10vh;
+background-position: center;
+display: inline-block;
+background-color: hsl(176, 50%, 47%);
+width: 15vh;
+height: 15vh;
+border-radius: 25%;
+margin-right: 30px;
+
+}
+.logocontainer {
+  background-color:hsl(176, 80%, 30%);
+  padding: 10px;
+  width: 43%;
+  float: left;
+  margin-top: 50px;
+  margin-left: 230px;
+  border-radius: 20px;
+  height: 430px;
+  position: relative;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#google{
+    background-color: hsl(176, 50%, 47%);
+    height: 40px;
+
+}
+
+.todo{
+  background-color: hsl(176, 50%, 47%);;
+  border-radius: 20px;
+  height: 450px;
+  float:right;
+  width: 35%;
+  margin-top: 50px;
+  font-family: Commissioner;
+  margin-right: 20px;
+  min-width: 50px;
+  text-align:center;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px; 
+}
+
+.outdiv{
+  position: relative;
+}
+
+.five:hover, .ten:hover, .fifteen:hover, .twenty-five:hover, .fifty:hover, .fifty2:hover, #whiteboardbutton:hover{
+  transform: translateY(-10px);
+}
+#list{
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background-color: hsl(212, 33%, 89%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  width: 230px;
+  color: var(--clr-grey-5);  
+  margin-right: -4px;
+  flex: 1 0 auto;
+  resize: none;
+  z-index: 2;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: Commissioner;
+
+}
+.form-control{
+  display: flex;
+  justify-content: center;
+}
+
+
+h3{
+  line-height: 1.5;
+  text-transform: capitalize;
+
+}
+.submit-btn {
+  background: hsl(205, 86%, 81%);
+  border-color: transparent;
+  align-items: center;
+  padding: 0.35rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  content: #49a6e9;
+  transition: all 0.3s linear;
+  font-size: 1rem;
+  font-family: Commissioner;
+
+  flex: 0 0 5rem;
+
+
+}
+.submit-btn:hover{
+  background-color:hsl(183, 100%, 15%);
+}
+
+
+.whiteboard-content {
+background-color: #313131;
+margin: 0px auto; 
+padding: 20px;
+border: 1px solid #888;
+width: 80%; 
+}
+
+.tools .color-field {
+  height: 40px;
+  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-self: center;
+  margin: 0 10px;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.tools .button {
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  background: #222;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.color-picker {
+  align-self: center;
+  margin: 0 10px;
+  height: 50px;
+}
+
+.pen-range {
+  align-self: center;
+  margin: 0 10px;
+}
+
+canvas {
+  box-shadow: -3px 2px 9px 6px black;
+  cursor: pointer;
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+#whiteboardmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color:rgb(252, 0, 0);
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-top: 1.25rem;
+  font-size: 12pt;
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+.grocery-container {
+margin-top: 1.5rem;
+transition: all 0.3s linear;
+visibility: hidden;
+}
+.show-container {
+visibility: visible;
+}
+.grocery-item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 0.5rem;
+transition: all 0.3s linear;
+padding: 0.25rem 1rem;
+border-radius: 10px;
+text-transform: capitalize;
+text-align: center;
+}
+.grocery-item:hover {
+color: black;
+background: hsl(205, 86%, 81%);
+}
+.grocery-item:hover .title {
+color: black;
+}
+.title {
+margin: 0 0.15rem;
+color: black;
+letter-spacing: 2px;
+transition: all 0.3s linear;
+}
+.edit-btn,
+.delete-btn {
+background: transparent;
+border-color: transparent;
+cursor: pointer;
+font-size: 0.7rem;
+margin: 0 0.15rem;
+transition: all 0.3s linear;
+}
+.edit-btn {
+color: lightgreen;
+}
+.edit-btn:hover {
+color: darkgreen;
+}
+.delete-btn {
+color: red;
+}
+.delete-btn:hover {
+color: darkred;
+}
+.clear-btn {
+text-transform: capitalize;
+width: 10rem;
+height: 1.5rem;
+display: grid;
+align-items: center;
+background: transparent;
+border-color: transparent;
+color: red;
+margin: 0 auto;
+font-size: 0.85rem;
+letter-spacing: 2px;
+cursor: pointer;
+transition: all 0.3s linear;
+margin-top: 1.25rem;
+z-index: 2;
+}
+.clear-btn:hover {
+color: darkred;
+}
