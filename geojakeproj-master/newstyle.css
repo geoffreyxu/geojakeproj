@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200&display=swap');
+
+body{
+    background-color: hsl(176, 80%, 30%);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-family: Commissioner;
+}
+
+div.rss-rotator {
+    width: 86%;
+    align-self: flex-end;
+    background-color: hsl(176, 80%, 30%);
+    z-index: 2;
+    margin-left: 14%;
+    margin-top: 18%;
+  }
+  
+  ul {
+    list-style: none;
+    height: 400px;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  li {
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header{
+    background-color: hsl(176, 50%, 47%);
+    height: 200px;
+    width: 82%;
+    border-radius: 20px;
+    float:right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: Commissioner;
+    font-size: 20pt;
+    color: hsla(0, 0%, 80%, 0.822);
+    
+  }
+  /* The side navigation menu */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: hsl(176, 50%, 47%);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: Commissioner;
+  }
+  /* The news navigation menu */
+  .newstopics {
+    margin-left: 200px;
+    margin-top: 200px;
+    padding: 0;
+    width: 100%;
+    background-color: hsl(176, 50%, 47%);
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    font-family: Commissioner;
+  }
+  
+  /* News navigation links */
+  .newstopics a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  /* styling for news navigation links */
+  .newstopics li {
+  display: inline-block;
+  }
+  
+  /* Active/current link */
+  .newstopics a.active {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+  }
+  /* Links on mouse-over */
+  .newstopics a:hover:not(.active) {
+    background-color: hsl(176, 80%, 30%);
+    color: white;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 30px;
+  
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: hsl(176, 80%, 30%);
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1200px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
