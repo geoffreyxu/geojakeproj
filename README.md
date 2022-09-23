@@ -1,2 +1,1 @@
-# geojakeproj
-Geo and Jake Website Project Repository 
+Personal Butler Project Maintained by Jake Mok
